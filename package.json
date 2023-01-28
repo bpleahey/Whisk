@@ -1,0 +1,20 @@
+{
+  "name": "hack-brown2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpleahey/hack-brown2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpleahey/hack-brown2023/issues"
+  },
+  "homepage": "https://github.com/bpleahey/hack-brown2023#readme"
+}
