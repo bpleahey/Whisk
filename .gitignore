@@ -1,3 +1,4 @@
 #ignore all data
-*.csv
+#*.csv
 *.db
+csv_parse/
