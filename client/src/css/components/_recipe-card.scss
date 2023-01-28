@@ -1,0 +1,26 @@
+.RecipeCard {
+
+    width: 28rem;
+    height: 34rem;
+    border-radius: 30px;
+
+    &-image {
+        width: 100%;
+
+        &-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &-content {}
+
+    &-info {}
+
+    &-rating {
+        &-star {}
+    }
+
+    &-duration {}
+
+}
