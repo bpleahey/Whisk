@@ -5,7 +5,8 @@ import {
   Home,
   Chat,
   Ingredients,
-  Recipe
+  Recipe,
+  Done
 } from "./components";
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
         <Route path="/chat" element={<Chat />} />
         <Route path="/ingredients" element={<Ingredients />} />
         <Route path="/recipe" element={<Recipe />} />
+        <Route path="/done" element={<Done />} />
       </Routes>
     </Router>
     );
