@@ -4,7 +4,11 @@ class Header extends Component {
 
     render() {
         return (
-            <p>Header</p>
+            <header className="Header">
+                <div class="content-wrapper">
+                    <h1 className="Header-logo">WHISK</h1>
+                </div>
+            </header>
         );
     }
 }
