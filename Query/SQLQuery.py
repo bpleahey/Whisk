@@ -23,6 +23,12 @@ class Query:
         self.cursor.execute(self.get_query())
         fetch = self.cursor.fetchmany(self.to_fetch)
         return fetch
+
+    
+
+    def close(self):
+        """Closes the connection"""
+        self.connection.close()
     
     def create_table(self, name: str, col_names: list[str], col_types: list[str]):
         sql_command = """DROP TABLE {name} IF EXISTS;
