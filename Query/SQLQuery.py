@@ -18,12 +18,15 @@ class Query:
         """Returns the query string"""
         pass
 
-    def execute(self, db: sqlite3.Connection) -> list:
+    def execute(self) -> list:
         """Executes the query on the given database connection"""
-        self.cursor.execute(self.get_query())
-        fetch = self.cursor.fetchmany(self.to_fetch)
-        return fetch
+        return self.cursor.execute(self.get_query())
+        #fetch = self.cursor.fetchmany(self.to_fetch)
+        #return fetch
 
+    def commit(self):
+        """Commits the changes to the database"""
+        self.connection.commit()
     
 
     def close(self):
@@ -31,13 +34,14 @@ class Query:
         self.connection.close()
     
     def create_table(self, name: str, col_names: list[str], col_types: list[str]):
-        sql_command = """DROP TABLE ? IF EXISTS;
+        self.cursor.execute(f"DROP TABLE IF EXISTS {name};")
+        sql_command = f"""
         CREATE TABLE {name} (
-            {col_names[0]} {col_types[0]})"""
+            {col_names[0]} {col_types[0]}"""
 
         for i in range(1, len(col_names)):
-            sql_command += ", {col_names[i]} {col_types[i]}"
-        sql_command += ");"
+            sql_command += f", {col_names[i]} {col_types[i]}"
+        sql_command += ")"
         self.cursor.execute(sql_command)
 
     #def create_possible_recipe_table(self):

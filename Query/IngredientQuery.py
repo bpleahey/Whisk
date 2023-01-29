@@ -12,14 +12,29 @@ class IngredientQuery(Query):
     #WHERE CustomerName LIKE '%or%'
 
     def create_ing_table(self):
-        self.create_table("ingredientlist", ["ingredient"], ["varchar(255)"])
+        self.create_table("ingredientlist", ["ingredient"], ["text"])
         for i in self.ingredientlist:
-            self.cursor.execute(f"INSERT INTO ingredientlist VALUES ('{i}')")
+            self.cursor.execute(f"INSERT INTO ingredientlist Values ('{i}')")
+        self.commit()
 
     def get_query(self) -> str:
         self.create_ing_table()
-    
-        return f"SELECT * FROM recipes WHERE id IN (SELECT id FROM ingredients WHERE ingredient IN (SELECT ingredient FROM ingredientlist))"
+        #TODO: make query only select recipes that have all the ingredients
+        
+        query = """INSERT INTO personalizedtable
+            SELECT * FROM RAW_recipes WHERE id IN (SELECT id FROM ingredientlist)"""
 
-    def create_personalized_table(self, username: str):
-        self.create_table(username, ["id", "name", "time", "rating", "link"], ["int", "varchar(255)", "int", "int", "varchar(255)"])
+        return """INSERT INTO personalizedtable
+            SELECT * FROM RAW_recipes WHERE id IN
+            (SELECT id FROM ingredientlist WHERE ingredient IN (SELECT
+            ingredient FROM ingredientlist))"""
+
+    def create_personalized_table(self) -> None:
+        query = self.get_query()
+        self.create_table("personalizedtable",["name","id","minutes",
+            "contributor_id","submitted","tags","nutrition","n_steps","steps",
+            "description","ingredients","n_ingredients"], ["text", "int",
+            "int", "int", "text", "text", "text", "int",
+            "text", "text", "text", "int"])
+        self.cursor.execute(query)
+        self.commit()
