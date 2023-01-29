@@ -7,8 +7,10 @@ class Ingredients extends Component {
     render() {
         return (
             <main className="Ingredients">
-                <IngredientsSearch />
-                <MyIngredients />
+                <div class="content-wrapper">
+                    <IngredientsSearch />
+                    <MyIngredients />
+                </div>
             </main>
         );
     }

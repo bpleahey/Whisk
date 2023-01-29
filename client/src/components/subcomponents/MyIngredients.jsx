@@ -5,7 +5,7 @@ class MyIngredients extends Component {
     render() {
         return (
             <div className="MyIngredients">
-                
+                <h3 className="MyIngredients-title">My Ingredients</h3>
             </div>
         );
     }

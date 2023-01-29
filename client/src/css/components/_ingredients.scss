@@ -1,4 +1,20 @@
 .Ingredients {
-    height: 100%;
-    background-color: orange;
+
+    .content-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+}
+
+.IngredientsSearch, .MyIngredients {
+    background: lightgrey;
+    width: 30rem;
+    height: 50rem;
+}
+
+.MyIngredients {
+    &-title {
+        text-align: center;
+    }
 }
