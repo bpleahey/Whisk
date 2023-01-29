@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  Header,
+  Footer,
+  Home,
+  Chat
+} from "./components";
 
 class App extends Component {
   constructor(props) {
@@ -18,8 +25,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-      </div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chat" element={<Chat />} />
+        </Routes>
+        <Footer />
+      </Router>
     );
   }
 }
