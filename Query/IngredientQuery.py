@@ -1,4 +1,5 @@
 from SQLQuery import Query
+from fuzzywuzzy import fuzz
 
 class IngredientQuery(Query):
     def __init__(self, ingredientlist: list[str]):
