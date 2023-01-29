@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import IngredientsSearch from "./subcomponents/IngredientsSearch";
-import MyIngredients from "./subcomponents/MyIngredients";
 
 class Ingredients extends Component {
 
@@ -8,8 +7,8 @@ class Ingredients extends Component {
         return (
             <main className="Ingredients">
                 <div className="content-wrapper">
+                    <h2 className="Ingredients-title">My Ingredients</h2>
                     <IngredientsSearch />
-                    <MyIngredients />
                 </div>
             </main>
         );

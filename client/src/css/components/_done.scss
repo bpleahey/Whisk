@@ -1,16 +1,63 @@
-#checkbox-list {
-    /* Add any styling for the list container as needed */
-  }
-  
-  #checkbox-list input[type="checkbox"] {
-    /* Add any styling for the checkboxes as needed */
-  }
-  
-  #checkbox-list li {
-    /* Add any styling for the list items as needed */
-  }
-  
-  #submit-button {
-    /* Add any styling for the submit button as needed */
-  }
-  
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+.Done{
+    
+    &-back{
+        background: radial-gradient(100% 197.75% at 0% 86.23%, #FF9900 0%, #FFB800 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;  
+        width: 100%;
+        height: 100vh;
+        
+    }
+    &-Middle{
+        display: flex; /* allows for vertical and horizontal alignment */
+        flex-direction: column; /* stacks the header and list vertically */
+        align-items: center; /* aligns the container horizontally in the center */
+        justify-content: center;
+        
+    }
+
+    &-box{
+        border-radius: 1.25rem;
+        background: #F4F2F2;
+        padding: 1.25rem;
+        position: absolute;
+        width: 38rem;
+        height: 45rem;
+        top: 7rem;
+    }
+
+
+    &-header{
+        text-align: center;
+        position: absolute;
+        top: 10rem;
+        width: 40%;
+        
+    }
+
+    box-button{
+        align-content: center;
+        
+    }
+    .box-button {
+        height: 3rem;
+        background-color: #FF9900;
+        border-radius: 1.25rem;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        bottom: 10rem;
+    }
+
+    &-back-button{
+        filter: brightness(100%);
+        filter: saturate(0%);
+        position: absolute;
+        top: 7rem;
+        left: 1rem;
+    }
+}

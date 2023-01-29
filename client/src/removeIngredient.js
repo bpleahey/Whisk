@@ -1,19 +1,23 @@
-// Get the submit button
-const submitButton = document.getElementById("submit-button");
+document.querySelector("#eraser").addEventListener("click", () => {
+  document.querySelector("#groceryItems").textContent = "";
+})
 
-// Add an event listener to the submit button
-submitButton.addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent the form from submitting
-
-  // Get all the checkboxes
-  const checkboxes = document.querySelectorAll("#checkbox-list input[type='checkbox']");
-
-  // Loop through the checkboxes
-  for (let i = 0; i < checkboxes.length; i++) {
-    // If the checkbox is checked
-    if (checkboxes[i].checked) {
-      // Remove the corresponding list item
-      checkboxes[i].parentNode.remove();
-    }
-  }
+document.querySelector("#userInput").addEventListener("keydown", (event) => {
+  if(event.key == "Enter")
+    addItem();
 });
+
+addItem = () => {
+  const item = document.createElement("h2")
+  item.textContent = "- " + document.querySelector("#userInput").value;
+
+  item.addEventListener("click", () => {
+    if(item.style.textDecoration != "line-through")
+      item.style.textDecoration = "line-through";
+    else
+      item.style.textDecoration = "none";
+  })
+
+  document.querySelector("#groceryItems").appendChild(item);
+  document.querySelector("#userInput").value = "";
+}
