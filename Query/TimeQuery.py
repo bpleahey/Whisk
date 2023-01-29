@@ -1,4 +1,7 @@
 from SQLQuery import Query
+import csv
+import numpy as np
+
 
 class TimeQuery(Query):
     def __init__(self, lowerlim: int, upperlim : int):
@@ -12,6 +15,12 @@ class TimeQuery(Query):
         return f"SELECT * FROM personalizedtable WHERE time BETWEEN {self.lowerlim} AND {self.upperlim}"
     
     def create_lists(self) -> None:
-        query = self.get_query()
-        for row in self.cursor.execute(query):
+        self.cursor.execute(self.get_query())
+        with open("out.csv", 'w',newline='') as csv_file: 
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow([i[0] for i in self.cursor.description]) 
+            csv_writer.writerows(self.cursor)
+        self.connection.close()
+
+        
             
