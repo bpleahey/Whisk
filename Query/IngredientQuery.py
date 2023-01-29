@@ -24,15 +24,14 @@ class IngredientQuery(Query):
             "description","ingredients","n_ingredients"], ["text", "int",
             "int", "int", "text", "text", "text", "int",
             "text", "text", "text", "int"])
-        ingreds = []
 
 
         #TODO: if this is reused, make it a function
         counter = 0
         for row in self.cursor.execute(f"SELECT ingredients FROM RAW_recipes"):
+            ingreds = []
             if(counter == 5):
                 break
-            print ("new row")
             l = row[0].strip('[]').split(', ')
             for ingred in l:
                 if(ingred[0] == "'"):
@@ -44,6 +43,7 @@ class IngredientQuery(Query):
                 ingreds[i] = ingred.replace("\'", "")
             if(set(ingreds).issubset(set(self.ingredientlist))):
                 #TODO: see if we can take out smaller ingredients
+                print("executed on row " + str(counter))
                 counter += 1
                 self.cursor.execute(f'INSERT INTO personalizedtable SELECT * FROM RAW_recipes WHERE ingredients LIKE "{row[0]}"')
         
