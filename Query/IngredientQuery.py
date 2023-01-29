@@ -41,6 +41,7 @@ class IngredientQuery(Query):
                     ingreds.append(ingred)
             for(i, ingred) in enumerate(ingreds):
                 ingreds[i] = ingred.replace("\'", "")
+            #TODO: replace issubet with a function that checks if the ingredients are in the list
             if(set(ingreds).issubset(set(self.ingredientlist))):
                 #TODO: see if we can take out smaller ingredients
                 print("executed on row " + str(counter))
