@@ -12,17 +12,18 @@ class RecipeCard extends Component {
                     <img className="RecipeCard-image" src="https://assets.bonappetit.com/photos/5b69f163d3d14670539a2174/4:3/w_3552,h_2664,c_limit/ba-tikka-masala-2.jpg" />
                 </div>
                 <div className="RecipeCard-content">
-                    <h3 className="RecipeCard-name">Chicken Tikka Masala</h3>
+                    <h3 className="RecipeCard-name">Chicken Tikka</h3>
                     <div className="RecipeCard-info">
-                        <span className="Recipe-Card-rating">
-                            <span className="Recipe-Card-rating-star">☆</span>
-                            <span className="Recipe-Card-rating-star">☆</span>
-                            <span className="Recipe-Card-rating-star">☆</span>
-                            <span className="Recipe-Card-rating-star">☆</span>
-                            <span className="Recipe-Card-rating-star">☆</span>
+                        <span className="RecipeCard-rating">
+                            <span className="RecipeCard-rating-star">☆</span>
+                            <span className="RecipeCard-rating-star">☆</span>
+                            <span className="RecipeCard-rating-star">☆</span>
+                            <span className="RecipeCard-rating-star">☆</span>
+                            <span className="RecipeCard-rating-star">☆</span>
                         </span>
-                        <span className="Recipe-Card-duration">30 mins</span>
+                        <span className="RecipeCard-duration">30 mins</span>
                     </div>
+                    <button className="RecipeCard-heart">&hearts;</button>
                 </div>
             </div>
         );
