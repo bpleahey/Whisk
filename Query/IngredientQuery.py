@@ -40,7 +40,7 @@ class IngredientQuery(Query):
                 if(ingred[-1] == "'"):
                     ingred = ingred[:-1]
                     ingreds.append(ingred)
-            ingreds = list(set(ingreds))
+            #ingreds = list(set(ingreds))
             simple_ingreds = []
             for(i, ingred) in enumerate(ingreds):
                 ingreds[i] = ingred.replace("\'", "")
