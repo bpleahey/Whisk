@@ -14,6 +14,7 @@ class Chat extends Component {
                     <p className="Chat-text1">Hi, I'm Whiskers!</p>
                     <p className="Chat-text2">How much time do you have?</p>
                     <div className="Chat-right-side-buttons">
+                        {/* <label><input type="button" name="duration" value="0"/>0-15 minutes</label> */}
                         <button class="box-button">0-15 minutes</button>
                         <button class="box-button">15-30 minutes</button>
                         <button class="box-button">30-45 minutes</button>
@@ -21,6 +22,7 @@ class Chat extends Component {
                         <button class="box-button">60-120 minutes</button>
                         <button class="box-button">120+ minutes</button>
                     </div>
+                    {/* <script src="script.js"></script> */}
                 </div>
             </div>
         );
