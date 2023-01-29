@@ -23,3 +23,12 @@ class Query:
         self.cursor.execute(self.get_query())
         fetch = self.cursor.fetchmany(self.to_fetch)
         return fetch
+    
+    def create_table(self, name: str):
+        sql_command = """DROP TABLE {name} IF EXISTS;
+        CREATE TABLE {name}(
+            Ingredient varchar(420));"""
+        self.cursor.execute(sql_command)
+
+    #def create_possible_recipe_table(self):
+        
