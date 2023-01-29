@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-
+import whiskers from './whiskers-standing.svg';
+import backbutton from './Back Button.svg';
 class Chat extends Component {
 
     render() {
         return (
             <div className="Chat">
                 <div className="Chat-left-side">
-                <img className="Chat-whisker" src="img/whiskers-standing.svg" />
+                <img src={whiskers} alt="whiskers" />
                     <div className="Chat-back-button">
-
+                        <img src={backbutton} alt="back button" />
                     </div>
                 </div>
                 <div className="Chat-right-side">
