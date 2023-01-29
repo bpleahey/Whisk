@@ -1,14 +1,22 @@
 .Header {
     height: 5rem;
+    background-color: white;
 
-    &-logo {
+    &-logo a {
         color: orange;
+        text-decoration: none;
+    }
+
+    &-ingredients a {
+        color: black;
+        text-decoration: none;
     }
 
     .content-wrapper {
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     
 }

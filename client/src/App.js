@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Header,
-  Footer,
   Home,
-  Chat
+  Chat,
+  Ingredients
 } from "./components";
 
 class App extends Component {
@@ -30,8 +30,8 @@ class App extends Component {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/ingredients" element={<Ingredients />} />
       </Routes>
-      <Footer />
     </Router>
     );
   }
