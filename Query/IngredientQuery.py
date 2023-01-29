@@ -20,14 +20,14 @@ class IngredientQuery(Query):
     def get_query(self) -> str:
         self.create_ing_table()
         #TODO: make query only select recipes that have all the ingredients
-        
-        query = """INSERT INTO personalizedtable
-            SELECT * FROM RAW_recipes WHERE id IN (SELECT id FROM ingredientlist)"""
-
+        #l = self.cursor.execute(f"SELECT * FROM RAW_recipes WHERE ingredients IN (SELECT * FROM ingredientlist)")
         return """INSERT INTO personalizedtable
+            SELECT * FROM RAW_recipes WHERE ingredients IN (SELECT * FROM ingredientlist)"""
+
+        '''return """INSERT INTO personalizedtable
             SELECT * FROM RAW_recipes WHERE id IN
             (SELECT id FROM ingredientlist WHERE ingredient IN (SELECT
-            ingredient FROM ingredientlist))"""
+            ingredient FROM ingredientlist))"""'''
 
     def create_personalized_table(self) -> None:
         query = self.get_query()
