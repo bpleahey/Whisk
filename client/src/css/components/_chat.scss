@@ -7,6 +7,12 @@
         background: radial-gradient(58.23% 58.23% at 80.04% 41.9%, #FFB800 0%, #FF9900 100%);
     }
 
+    &-back-button{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
     &-whiskers{
         position: relative;
         width: 70%;
@@ -15,6 +21,9 @@
     }
 
     &-right-side{
+        font-weight: 900;
+        font-size: 2rem;
+        font-family: 'Open Sans';
         border-radius: 1.25rem;
         background: #F4F2F2;
         padding: 1.25rem;
@@ -23,6 +32,20 @@
         height: 45rem;
         top: 10rem;
         left: 80rem;
+        &-buttons{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .box-button {
+            width: 27rem;
+            height: 5rem;
+            background-color: #D9D9D9;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
     }
 
 

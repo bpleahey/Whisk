@@ -15,24 +15,14 @@ class Chat extends Component {
                 <div className="Chat-right-side">
                     <p>Hi, I'm Whiskers!</p>
                     <p>How much time do you have?</p>
-                    <button onclick="">
-                        0-15 minutes
-                    </button>
-                    <button onclick="">
-                        15-30 minutes
-                    </button>
-                    <button onclick="">
-                        30-45 minutes
-                    </button>
-                    <button onclick="">
-                        45-60 minutes
-                    </button>
-                    <button onclick="">
-                        60-120 minutes
-                    </button>
-                    <button onclick="">
-                        120+ minutes
-                    </button>
+                    <div className="Chat-right-side-buttons">
+                        <button class="box-button">0-15 minutes</button>
+                        <button class="box-button">15-30 minutes</button>
+                        <button class="box-button">30-45 minutes</button>
+                        <button class="box-button">45-60 minutes</button>
+                        <button class="box-button">60-120 minutes</button>
+                        <button class="box-button">120+ minutes</button>
+                    </div>
                 </div>
             </div>
         );
