@@ -7,7 +7,7 @@ class Chat extends Component {
         return (
             <div className="Chat">
                 <div className="Chat-left-side">
-                <img src={whiskers} alt="whiskers" />
+                    <img className="Chat-whiskers" src={whiskers} alt="whiskers" />
                     <div className="Chat-back-button">
                         <img src={backbutton} alt="back button" />
                     </div>
