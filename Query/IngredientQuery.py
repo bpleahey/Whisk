@@ -3,7 +3,7 @@ import sqlite3
 
 class IngredientQuery(Query):
     def __init__(self, ingredientlist: list[str]):
-        super().__init__(sqlite3.connect("/Users/BrendanLeahey/Desktop/Independent/Hacks/Hack@Brown2023/hack-brown2023/.data/recipes.db"))
+        super().__init__()
         self.ingredientlist = ingredientlist
     
     ingredientlist : list[str] # The list of ingredients to search for
@@ -18,6 +18,7 @@ class IngredientQuery(Query):
 
     def get_query(self) -> str:
         self.create_ing_table()
+    
         return f"SELECT * FROM recipes WHERE id IN (SELECT id FROM ingredients WHERE ingredient IN (SELECT ingredient FROM ingredientlist))"
 
     def create_personalized_table(self, username: str):

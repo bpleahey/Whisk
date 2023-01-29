@@ -4,8 +4,8 @@ from abc import ABC, abstractmethod
 class Query:
     """A class that represents a SQL query"""
 
-    def __init__(self, connection: sqlite3.Connection, to_fetch: int = 1):
-        self.connection = sqlite3.connect(".data/recipes.db")
+    def __init__(self, to_fetch: int = 1):
+        self.connection = sqlite3.connect("/Users/BrendanLeahey/Desktop/Independent/Hacks/Hack@Brown2023/hack-brown2023/.data/recipes.db")
         self.cursor = self.connection.cursor()
         self.to_fetch = to_fetch
     
@@ -31,8 +31,8 @@ class Query:
         self.connection.close()
     
     def create_table(self, name: str, col_names: list[str], col_types: list[str]):
-        sql_command = """DROP TABLE {name} IF EXISTS;
-        CREATE TABLE {name}(
+        sql_command = """DROP TABLE ? IF EXISTS;
+        CREATE TABLE {name} (
             {col_names[0]} {col_types[0]})"""
 
         for i in range(1, len(col_names)):
