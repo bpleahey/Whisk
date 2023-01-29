@@ -1,6 +1,8 @@
 .Chat{
- 
+    
     &-left-side{
+        
+        overflow: hidden;
         position: absolute;
         top: 0px;
         z-index: -1;
@@ -10,6 +12,8 @@
     }
 
     &-back-button{
+        filter: brightness(100%);
+        filter: saturate(0%);
         position: absolute;
         top: 7rem;
         left: 1rem;
@@ -18,7 +22,7 @@
     &-whiskers{
         position: relative;
         width: 70%;
-        left: 7.125rem;
+        left: 8.525rem;
         top: 12.7rem;
     }
 
@@ -43,6 +47,8 @@
         .box-button {
             height: 5rem;
             background-color: #D9D9D9;
+            border-radius: 1.25rem;
+            border: none;
             text-align: center;
             padding: 10px;
             margin-bottom: 10px;

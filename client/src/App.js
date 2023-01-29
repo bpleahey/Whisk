@@ -4,7 +4,8 @@ import {
   Header,
   Home,
   Chat,
-  Ingredients
+  Ingredients,
+  Recipe
 } from "./components";
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/ingredients" element={<Ingredients />} />
+        <Route path="/recipe" element={<Recipe />} />
       </Routes>
     </Router>
     );

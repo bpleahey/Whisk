@@ -1,0 +1,94 @@
+
+
+.Recipe{
+    &-Top{
+        position: relative;
+        top: 1rem;
+        z-index: -1;
+    }
+
+    &-Bottom{
+        display: flex; /* allows for vertical and horizontal alignment */
+        flex-direction: column; /* stacks the header and list vertically */
+        align-items: center; /* aligns the container horizontally in the center */
+        justify-content: center;
+    }
+
+    &-Ingredients{
+        width: 40%;
+    
+    }
+  
+    &-Instructions{
+        width: 40%;
+    }
+
+    &-image{
+       width: 80%;
+       height: 25rem;
+       object-fit: cover; /* crops the image to fill the container */
+       object-position: center;
+       display: block;
+       margin: 0 auto;
+    }
+
+    &-name{
+        position: relative;
+        top: 1.5rem;
+        left: 8.8rem;
+    }
+
+    &-info {
+        font-size: 1.25rem;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    &-rating {
+        position: relative;
+        top:  2rem;
+        left: 8.8rem;
+        border-right: 1.5px solid $black;
+        padding-right: 0.5rem;
+
+        &-star {}
+    }
+
+    &-duration {
+        width: 40rem;
+        position: relative;
+        top: 2rem;
+        left: 8.8rem;
+        padding-left: 0.5rem;
+        font-weight: bold;
+    }
+
+    &-whisker-icon{
+        left: -10rem;
+        top: -2.1rem;
+        width: 8%;
+        position: relative;
+    }
+
+    &-desc{
+        left:-9rem;
+        height: auto;
+        width: 40rem;
+        position: relative;
+    }
+    box-button{
+        align-content: center;
+    }
+    .box-button {
+        height: 3rem;
+        background-color: #FF9900;
+        border-radius: 1.25rem;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import whiskers from './whiskers-standing.svg';
+import whiskers from './whisker2.svg';
 import backbutton from './Back Button.svg';
 class Chat extends Component {
 

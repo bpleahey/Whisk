@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.61 408.63">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #e8e8e8;
+      }
+
+      .cls-5 {
+        fill: #c4c4c4;
+      }
+
+      .cls-6 {
+        fill: #777676;
+      }
+
+      .cls-7 {
+        opacity: .33;
+      }
+
+      .cls-8 {
+        fill: #cecece;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="-2" y="325" width="284" height="31" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="-2" y="325" width="284" height="31" maskUnits="userSpaceOnUse">
+      <g class="cls-2">
+        <image width="284" height="31" transform="translate(-2 325)" xlink:href="data:image/png;base64,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"/>
+      </g>
+    </mask>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1" dy="6"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity="0"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_13" data-name="Layer 13">
+      <g class="cls-7">
+        <g class="cls-1">
+          <ellipse cx="140" cy="340.5" rx="140" ry="13.5"/>
+        </g>
+      </g>
+    </g>
+    <g id="Layer_12" data-name="Layer 12">
+      <ellipse cx="245.82" cy="147.97" rx="16.75" ry=".68"/>
+      <ellipse cx="245.82" cy="142.97" rx="16.75" ry=".68" transform="translate(-37.03 113.58) rotate(-24.25)"/>
+    </g>
+    <path class="cls-8" d="m250,223c-11,1-8,14-8,14-6,0-18,6-20-3s-2-33-15-36c3-9,12-19,12-19,0,0,13-9,0-6-6,0-10-2-16-7s3-2,3-2c0,0,13,6,23,1s18-15,18-26-1-11-1-11c0,0-13,2-23-3s-17-10-17-10c0,0,17-5,10-5s-14.44,2-11.22,0c3.22-2,9.22-6,8.22-11-3,4-11,9-15,9s-13-3-16-2-54-43-54-43c0,0-34-17-39,17s43,32,44,32c4,3,19,1,15,14,0,0-42-23-67-7s-15,37-12,41,17.49,21.1,37.24,13.05c19.76-8.05,21.76-12.05,25.76-13.05s17-6,22,6,10,21-2,28-20,6-26,13-18,16-11,27,9,11,7,14-12,10-14,9c0,3,1,11,7,10,5-2,12-8,7,2s-33,53-66,30c-25-23-18-41-16-47s10-26,31-24c17,4,24,12,24,12,0,0,8,2-4-10s-32-9-38-4-24,17-22,46,32,41,34,41,26,6,45-12c-1,7-1,17-6,21s-26,19-28,26c3,6,14,3,14,3,0,0,13-5,17-19,7-11,21-32,40-32s24,1,24,1c0,0-2,7.14,0,9.07,2,1.93,19,23.93,24,24.93s23,1,17-7c-9-5-30-16-30-16,0,0-10,0,0-10,6-3,16-34,17-40s11.14-26.91,11.57-29.46c2.86,5.91,9.74,20.46,20.59,18.46,9.69-1,20.84-2,23.84-8s6-21-5-20Zm-120,21s-2-6-5-11,3-9,7-14,12.31-3.39,12.31-3.39c1.31,4.61-14.31,28.39-14.31,28.39Zm63.61-103.61c-3.32-3.32-4.27-7.75-2.12-9.9,2.15-2.15,6.58-1.2,9.9,2.12s4.27,7.75,2.12,9.9c-2.15,2.15-6.58,1.2-9.9-2.12Z"/>
+    <ellipse cx="197.43" cy="136.83" rx="6.08" ry="8.67" transform="translate(-38.93 179.68) rotate(-45)"/>
+    <ellipse class="cls-3" cx="194.5" cy="134.5" rx="1.5" ry="2.5"/>
+    <g id="Layer_11" data-name="Layer 11">
+      <ellipse cx="220.75" cy="149.18" rx="16.75" ry=".68" transform="translate(-19.5 34.02) rotate(-8.44)"/>
+      <ellipse cx="221.03" cy="154.92" rx="16.75" ry=".68" transform="translate(-43.13 99.46) rotate(-23.17)"/>
+    </g>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <path class="cls-4" d="m151,194s13,8,9,24-12,19-23,16c-4,5-5.87,11-5.43,17s6.43,44-2.57,49c8,0,53,0,60,2,4-5,6-10,8-13,2-4,14-38,9-62,5-8,9.69-15.37,7.84-22.68-2.69-3.63-4.84-3.32-4.84-3.32,0,0-1,16-9,18s-29,4-32-5-8-23-12-23-5,3-5,3Z"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <path class="cls-4" d="m195,108s-39-2-48,22c-9-18-15-26-15-26,0,0-22,1-19-19,2-13,10-16,14-16,0-4,4-13,11-16s16.17-2,18.58,0c2.83-2,21.42-9,29.42,0s8,27-5,33c3,8,3,13,14,22Z"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <path class="cls-6" d="m295.24,177.34c-9.22-7.89-20.99,5.68-20.99,5.68,0,0-11.31,11.1-18.81,33.96l-29.86,34.12s-5.52,8.42-1.49,11.06c3.6,3.29,8.56.99,11.09-1.99s26.31-35.73,26.31-35.73c0,0,11.46-4.31,19.42-12.05,7.96-7.74,23.55-27.14,14.34-35.04Zm-7.12.89s-22.52,24.12-28.1,35.27c6.07-14.53,13.14-31.2,28.1-35.27Zm-26.56,39.06c14.5-24.75,30.32-36.59,30.32-36.59-2.68,9.35-16.51,23.43-30.32,36.59Zm3.22,2.11c8.29-4.75,29.05-34.65,29.05-34.65-4.15,19.5-19.53,29.78-29.05,34.65Z"/>
+  </g>
+  <g id="Layer_6" data-name="Layer 6">
+    <path class="cls-5" d="m249.51,223.02s1.97,6.43-.83,9.16c-2.8,2.73-6.96.3-6.96.3l4.12-5.01,3.66-4.45Z"/>
+  </g>
+</svg>
