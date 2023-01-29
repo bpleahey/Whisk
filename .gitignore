@@ -3,3 +3,4 @@
 *.db
 csv_parse/
 /Users/joey/Desktop/cs/hack-brown2023/.scratch.ipynb
+.DS_Store
