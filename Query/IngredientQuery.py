@@ -1,5 +1,5 @@
 from SQLQuery import Query
-from fuzzywuzzy import fuzz
+import re
 
 class IngredientQuery(Query):
     def __init__(self, ingredientlist: list[str]):
@@ -40,10 +40,15 @@ class IngredientQuery(Query):
                 if(ingred[-1] == "'"):
                     ingred = ingred[:-1]
                     ingreds.append(ingred)
+            ingreds = list(set(ingreds))
+            simple_ingreds = []
             for(i, ingred) in enumerate(ingreds):
                 ingreds[i] = ingred.replace("\'", "")
+                ingreds[i] = re.sub(r"(\w+\s)*(fresh|dried|crushed|minced|chopped|ground|powdered|whole|crumbled|shredded|sliced|quartered|halved|diced|peeled|skinned|cored|seeded)\s", "", ingred)
+                simple_ingreds.append(ingreds[i])
+            
             #TODO: replace issubet with a function that checks if the ingredients are in the list
-            if(set(ingreds).issubset(set(self.ingredientlist))):
+            if(set(simple_ingreds).issubset(set(self.ingredientlist))):
                 #TODO: see if we can take out smaller ingredients
                 print("executed on row " + str(counter))
                 counter += 1

@@ -30,10 +30,9 @@ class IngredientsSearch extends Component {
     render() {
         return (
             <div className="IngredientsSearch">
-                <div class="IngredientsSearch-box">
-                    {this.state.apiResponse}
+                <div className="IngredientsSearch-box">
                     <Select
-                        options={aquaticCreatures}
+                        options={this.state.apiResponse}
                     />
                 </div>
             </div>
