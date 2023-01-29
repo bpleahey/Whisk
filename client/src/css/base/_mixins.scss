@@ -1,0 +1,42 @@
+@mixin reduce-motion {
+    @media (prefers-reduced-motion: reduce) {
+      @content;
+    }
+  }
+  
+  @mixin screen-xs {
+    @media (min-width: $screen-xs) {
+      @content;
+    }
+  }
+  
+  @mixin screen-sm {
+    @media (min-width: $screen-sm) {
+      @content;
+    }
+  }
+  
+  @mixin screen-md {
+    @media (min-width: $screen-md) {
+      @content;
+    }
+  }
+  
+  @mixin screen-lg {
+    @media (min-width: $screen-lg) {
+      @content;
+    }
+  }
+  
+  @mixin screen-xl {
+    @media (min-width: $screen-xl) {
+      @content;
+    }
+  }
+  
+  @mixin screen-custom($screen-size) {
+    @media (min-width: $screen-size) {
+      @content;
+    }
+  }
+  
