@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 403.61 408.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e8e8e8;
+      }
+
+      .cls-3 {
+        fill: #c4c4c4;
+      }
+
+      .cls-4 {
+        fill: #777676;
+      }
+
+      .cls-5 {
+        opacity: .68;
+      }
+
+      .cls-6 {
+        fill: #cecece;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1" dy="6"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity="0"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_13" data-name="Layer 13">
+      <g class="cls-5">
+        <image width="352" height="99" transform="translate(0 291)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWAAAABjCAYAAAClgtpWAAAACXBIWXMAAAsSAAALEgHS3X78AAAEpElEQVR4nO3dbWvbVhiAYY2YmJaUjQ0K2///c/uwkeASkxDDKJzDHg6S9WbFR9J1gUgtx6nr1reOn/qlAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAN+MVf4qY9hO1QnM4b93dp2T6KfWyQANdjiVhe+1kHAa5GW3Avxf6xRH0FBPi25kR0iVhe+1lWwPW4FsmpsZwTdfH+JALcb0xU50R0iVgaQazDEsGbE/Ux8RbrGfYe4CGBGhPVORE1gtiv2kYQY+I95LqLdIetB7gvao8DAjUmqkYQTLHmEcTU4Mb973sN9FYC3BWYx7QdO0L0ODO8bQE2gmCsrY8g+s5779j/ls57v3L5VVtjgNuiEkMbo3oM53UFek54jSC4hTmr1S5zoj4m3kOue995XYHN8X0r9pVhXm2Uaw/w0Ng+tsT2EE53jRqMIKjBnNVqlzlRHxPvOSvfS88I4j1s+fLvRYRXHeUaAxzjcGwJ7peW2JbfFwO75xEE+zUn6mPiPWflG1e1Q0cQby0r43j63BLkt4F/7k9XU4Dbovs1BTd/zfvKsG5hBAG1WNsIIp5+TV/P6dfnsK/8WXdXQ4DLWMbgfmua5imcPoYQ1ziCgL2pbQRxDivhn+H90TTNqQhyNSE+VPCP5SGENUc3h/e3tH0JK9/PHkEA1++/ffeTe4wgcmyfUzN+hPv7OV2vNwH+P5Q5vjm6vzZN80falhpBCCwsr+++dm00MXcE8ZTa8VI8Oi5/77uoIcCHENYc4N9TeL+nbeoIQmihfl330bYwjx1BfC2iW66k76q2FfBTWPn+DO9fTdP8OWAEIbawPW33574olyOIY7jsRxHq871vsRoCnB3SjVWuhL+nMH/rmOcC+9EX5RzYU5r7XlKM83/IHWvqRk0Bzh7CSKJ8Glpe+QLEZjwUv85Bjo+eq1uw1RjgS3gIkR9GlDeqFTCQta2AX8OY4TXMi6tSU4DzfOY1PXzIR65jOv1iBgy7N3YG/E9qxyntu/tTz6IaAnwJQ/G2Gc2HZ0HALt3iWRD/Nk3zd/r6khpTTYhrCPBHOGLFWMbn/XkeMGzXks8Dfg6r4OfwqrgqRhK1rYDjvnhE80o4WK97vxLuObwk+RRmw14JF27UpvgLyTfgyXtBQLXW/l4Qd+Xd0KYFt9zf9ucQbNZoSDSjvrgOCbJ3Q6vIQ0dA1/B+wM2EYMfLCTe3Mjak2ZCglt8/NbxLjiC8H/ANtMWo5k/EaCYEO17OJ2Ls09RYXjM2pNmQaHZ9v0/EGMlnwtUzgpga7r7bymfC1W9qLK8ZG9Js7MFgyHXvO2/uCMJnwt1ZV7z2PoJYIurc3tRYXjN1VT32YDAnvDGqPhV5g/oCZARBDabG8pqpq+qxB4M54b30jCA2E9ouWw9wn7krXyMIbmFqLK+ZuqoeezAYct2XWOFvwt4DPIQRBEtbIlBTV9VjDwbiOoMA354RBGOteQTBDAJcDyOI/appBMEnEuBtM4JYB7EEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANapaZr/AFAbXCzpRxJXAAAAAElFTkSuQmCC"/>
+      </g>
+    </g>
+    <g id="Layer_12" data-name="Layer 12">
+      <ellipse cx="281.82" cy="147.97" rx="16.75" ry=".68"/>
+      <ellipse cx="281.82" cy="142.97" rx="16.75" ry=".68" transform="translate(-33.85 128.36) rotate(-24.25)"/>
+    </g>
+    <path class="cls-6" d="m286,223c-11,1-8,14-8,14-6,0-18,6-20-3s-2-33-15-36c3-9,12-19,12-19,0,0,13-9,0-6-6,0-10-2-16-7s3-2,3-2c0,0,13,6,23,1s18-15,18-26-1-11-1-11c0,0-13,2-23-3s-17-10-17-10c0,0,17-5,10-5s-14.44,2-11.22,0c3.22-2,9.22-6,8.22-11-3,4-11,9-15,9s-13-3-16-2-54-43-54-43c0,0-34-17-39,17s43,32,44,32c4,3,19,1,15,14,0,0-42-23-67-7s-15,37-12,41,17.49,21.1,37.24,13.05c19.76-8.05,21.76-12.05,25.76-13.05s17-6,22,6,10,21-2,28-20,6-26,13-18,16-11,27,9,11,7,14-12,10-14,9c0,3,1,11,7,10,5-2,12-8,7,2s-33,53-66,30c-25-23-18-41-16-47s10-26,31-24c17,4,24,12,24,12,0,0,8,2-4-10s-32-9-38-4-24,17-22,46,32,41,34,41,26,6,45-12c-1,7-1,17-6,21s-26,19-28,26c3,6,14,3,14,3,0,0,13-5,17-19,7-11,21-32,40-32s24,1,24,1c0,0-2,7.14,0,9.07,2,1.93,19,23.93,24,24.93s23,1,17-7c-9-5-30-16-30-16,0,0-10,0,0-10,6-3,16-34,17-40s11.14-26.91,11.57-29.46c2.86,5.91,9.74,20.46,20.59,18.46,9.69-1,20.84-2,23.84-8s6-21-5-20Zm-120,21s-2-6-5-11,3-9,7-14,12.31-3.39,12.31-3.39c1.31,4.61-14.31,28.39-14.31,28.39Zm63.61-103.61c-3.32-3.32-4.27-7.75-2.12-9.9,2.15-2.15,6.58-1.2,9.9,2.12s4.27,7.75,2.12,9.9c-2.15,2.15-6.58,1.2-9.9-2.12Z"/>
+    <ellipse cx="233.43" cy="136.83" rx="6.08" ry="8.67" transform="translate(-28.38 205.13) rotate(-45)"/>
+    <ellipse class="cls-1" cx="230.5" cy="134.5" rx="1.5" ry="2.5"/>
+    <g id="Layer_11" data-name="Layer 11">
+      <ellipse cx="256.75" cy="149.18" rx="16.75" ry=".68" transform="translate(-19.11 39.3) rotate(-8.44)"/>
+      <ellipse cx="257.03" cy="154.92" rx="16.75" ry=".68" transform="translate(-40.22 113.63) rotate(-23.17)"/>
+    </g>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <path class="cls-2" d="m187,194s13,8,9,24-12,19-23,16c-4,5-5.87,11-5.43,17s6.43,44-2.57,49c8,0,53,0,60,2,4-5,6-10,8-13,2-4,14-38,9-62,5-8,9.69-15.37,7.84-22.68-2.69-3.63-4.84-3.32-4.84-3.32,0,0-1,16-9,18s-29,4-32-5-8-23-12-23-5,3-5,3Z"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <path class="cls-2" d="m231,108s-39-2-48,22c-9-18-15-26-15-26,0,0-22,1-19-19,2-13,10-16,14-16,0-4,4-13,11-16s16.17-2,18.58,0c2.83-2,21.42-9,29.42,0s8,27-5,33c3,8,3,13,14,22Z"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <path class="cls-4" d="m331.24,177.34c-9.22-7.89-20.99,5.68-20.99,5.68,0,0-11.31,11.1-18.81,33.96l-29.86,34.12s-5.52,8.42-1.49,11.06c3.6,3.29,8.56.99,11.09-1.99s26.31-35.73,26.31-35.73c0,0,11.46-4.31,19.42-12.05,7.96-7.74,23.55-27.14,14.34-35.04Zm-7.12.89s-22.52,24.12-28.1,35.27c6.07-14.53,13.14-31.2,28.1-35.27Zm-26.56,39.06c14.5-24.75,30.32-36.59,30.32-36.59-2.68,9.35-16.51,23.43-30.32,36.59Zm3.22,2.11c8.29-4.75,29.05-34.65,29.05-34.65-4.15,19.5-19.53,29.78-29.05,34.65Z"/>
+  </g>
+  <g id="Layer_6" data-name="Layer 6">
+    <path class="cls-3" d="m285.51,223.02s1.97,6.43-.83,9.16c-2.8,2.73-6.96.3-6.96.3l4.12-5.01,3.66-4.45Z"/>
+  </g>
+</svg>
