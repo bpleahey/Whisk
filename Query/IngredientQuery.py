@@ -11,5 +11,8 @@ class IngredientQuery(Query):
     #use this to get the query
     #WHERE CustomerName LIKE '%or%'
 
-    def get_query(self) -> str:
-        return f"SELECT * FROM recipes WHERE ingredients LIKE '%{self.ingredient}%'"
+    def create_ing_table(self):
+        sql_command = """DROP TABLE ingredients IF EXISTS;
+        CREATE TABLE ingredients(
+            Ingredient varchar(420));"""
+        self.cursor.execute(sql_command)

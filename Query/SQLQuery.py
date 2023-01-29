@@ -24,10 +24,14 @@ class Query:
         fetch = self.cursor.fetchmany(self.to_fetch)
         return fetch
     
-    def create_table(self, name: str):
+    def create_table(self, name: str, col_names: list[str], col_types: list[str]):
         sql_command = """DROP TABLE {name} IF EXISTS;
         CREATE TABLE {name}(
-            Ingredient varchar(420));"""
+            {col_names[0]} {col_types[0]})"""
+
+        for i in range(1, len(col_names)):
+            sql_command += ", {col_names[i]} {col_types[i]}"
+        sql_command += ");"
         self.cursor.execute(sql_command)
 
     #def create_possible_recipe_table(self):
