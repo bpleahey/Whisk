@@ -1,0 +1,11 @@
+.Header {
+    height: 5rem;
+    border-bottom: 8px solid orange;
+
+    .content-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+}
