@@ -5,7 +5,7 @@ class Query:
     """A class that represents a SQL query"""
 
     def __init__(self, to_fetch: int = 1):
-        self.connection = sqlite3.connect("/Users/BrendanLeahey/Desktop/Independent/Hacks/Hack@Brown2023/hack-brown2023/.data/recipes.db")
+        self.connection = sqlite3.connect("/Users/joey/Desktop/cs/hack-brown2023/csv_parse/recipes.db")
         self.cursor = self.connection.cursor()
         self.to_fetch = to_fetch
     

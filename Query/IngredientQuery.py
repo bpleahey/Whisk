@@ -14,6 +14,7 @@ class IngredientQuery(Query):
     def create_ing_table(self):
         self.create_table("ingredientlist", ["ingredient"], ["text"])
         for i in self.ingredientlist:
+            i = re.sub(r"(\w+\s)*(fresh|dried|crushed|minced|chopped|ground|powdered|whole|crumbled|shredded|sliced|quartered|halved|diced|peeled|skinned|cored|seeded)\s", "", i)
             self.cursor.execute(f"INSERT INTO ingredientlist Values ('{i}')")
         self.commit()
         print("created ingredientlist table")
@@ -40,7 +41,8 @@ class IngredientQuery(Query):
                 if(ingred[-1] == "'"):
                     ingred = ingred[:-1]
                     ingreds.append(ingred)
-            ingreds = list(set(ingreds))
+            #ingreds = list(set(ingreds))
+            ingreds = [*set(ingreds)]
             simple_ingreds = []
             for(i, ingred) in enumerate(ingreds):
                 ingreds[i] = ingred.replace("\'", "")
