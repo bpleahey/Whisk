@@ -26,13 +26,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chat" element={<Chat />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+      <Footer />
+    </Router>
     );
   }
 }

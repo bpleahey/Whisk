@@ -5,7 +5,14 @@ class Home extends Component {
 
     render() {
         return (
-            <RecipeCard />
+            <div className="Recommended">
+                <h2 className="Recommended-title">Recommended</h2>
+                <div className="Recommended-recipes">
+                    <RecipeCard />
+                    <RecipeCard />
+                    <RecipeCard />
+                </div>
+            </div>
         );
     }
 }

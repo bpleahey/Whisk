@@ -1,0 +1,19 @@
+.Recommended {
+
+    &-title {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    &-recipes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+
+        @include screen-sm {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

@@ -2,6 +2,14 @@
 
     width: 20rem;
     height: 26rem;
+    @include screen-sm {
+        width: 14rem;
+        height: 20rem;
+    }
+    @include screen-xl {
+        width: 20rem;
+        height: 26rem;
+    }
     border-radius: 30px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -21,6 +29,12 @@
         padding: 1rem;
         height: 25%;
         position: relative;
+    }
+
+    &-name {
+        @include screen-sm {
+            font-size: 1rem;
+        }
     }
 
     &-info {
