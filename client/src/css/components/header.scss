@@ -1,6 +1,9 @@
 .Header {
     height: 5rem;
-    border-bottom: 8px solid orange;
+
+    &-logo {
+        color: orange;
+    }
 
     .content-wrapper {
         height: 100%;
