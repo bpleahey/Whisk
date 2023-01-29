@@ -4,6 +4,7 @@ const fs = require('fs');
 var router = express.Router();
 
 let ingredients = [];
+let options = [];
 
 fs.createReadStream('./data/ingredients.csv')
     .pipe(csv())
@@ -12,20 +13,15 @@ fs.createReadStream('./data/ingredients.csv')
     })
     .on('end', () => {
         console.log('CSV file successfully processed');
+        options = ingredients.map(({ ingredient }) => ({
+            value: ingredient,
+            label: ingredient
+        }))
     });
-
-let ingredientsDropdown = [];
-
-for (let k = 0; k < ingredients.length; k++) {
-    drown.push({
-        "value": ingredientsDropdown[k]['ingredient'],
-        "label": ingredientsDropdown[k]['ingredient']
-    })
-}
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-    res.json(ingredientsDropdown);
+    res.json(options);
 });
 
 module.exports = router;

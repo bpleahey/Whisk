@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <header className="Header">
-                <div class="content-wrapper">
+                <div className="content-wrapper">
                     <h1 className="Header-logo"><a href='/'>Whisk</a></h1>
                     <h4 className="Header-ingredients"><a href='/ingredients'>My Ingredients</a></h4>
                 </div>
