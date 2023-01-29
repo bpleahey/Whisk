@@ -1,0 +1,32 @@
+.Chat{
+ 
+    &-left-side{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: radial-gradient(58.23% 58.23% at 80.04% 41.9%, #FFB800 0%, #FF9900 100%);
+    }
+
+    &-whiskers{
+        position: relative;
+        width: 70%;
+        left: 7.125rem;
+        top: 12.7rem;
+    }
+
+    &-right-side{
+        border-radius: 1.25rem;
+        background: #F4F2F2;
+        padding: 1.25rem;
+        position: absolute;
+        width: 30rem;
+        height: 45rem;
+        top: 10rem;
+        left: 80rem;
+    }
+
+
+
+    
+}
+
